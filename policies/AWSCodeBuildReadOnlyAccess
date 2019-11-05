@@ -35,15 +35,16 @@
                     "Sid": "CodeStarNotificationsListAccess",
                     "Effect": "Allow",
                     "Action": [
-                        "codestar-notifications:ListNotificationRules"
+                        "codestar-notifications:ListNotificationRules",
+                        "codestar-notifications:ListEventTypes"
                     ],
                     "Resource": "*"
                 }
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v5",
+        "VersionId": "v6",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T20:48:33Z"
+        "CreateDate": "2019-11-05T22:11:42Z"
     }
 }

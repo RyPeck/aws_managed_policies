@@ -120,7 +120,8 @@
                     "Action": [
                         "codestar-notifications:ListNotificationRules",
                         "codestar-notifications:ListTargets",
-                        "codestar-notifications:ListTagsforResource"
+                        "codestar-notifications:ListTagsforResource",
+                        "codestar-notifications:ListEventTypes"
                     ],
                     "Resource": "*"
                 },
@@ -135,8 +136,8 @@
                 }
             ]
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T21:02:49Z"
+        "CreateDate": "2019-11-05T23:00:26Z"
     }
 }

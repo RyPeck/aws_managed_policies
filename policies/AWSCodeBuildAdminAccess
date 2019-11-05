@@ -70,6 +70,7 @@
                     "Effect": "Allow",
                     "Action": [
                         "codestar-notifications:ListNotificationRules",
+                        "codestar-notifications:ListEventTypes",
                         "codestar-notifications:ListTargets",
                         "codestar-notifications:ListTagsforResource"
                     ],
@@ -95,8 +96,8 @@
                 }
             ]
         },
-        "VersionId": "v7",
+        "VersionId": "v8",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-05T20:40:27Z"
+        "CreateDate": "2019-11-05T22:12:30Z"
     }
 }
