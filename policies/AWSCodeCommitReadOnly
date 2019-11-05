@@ -61,11 +61,32 @@
                         "iam:GetSSHPublicKey"
                     ],
                     "Resource": "arn:aws:iam::*:user/${aws:username}"
+                },
+                {
+                    "Sid": "CodeStarNotificationsReadOnlyAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:DescribeNotificationRule"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "codestar-notifications:NotificationsForResource": "arn:aws:codecommit:*"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CodeStarNotificationsListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:ListNotificationRules"
+                    ],
+                    "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v3",
+        "VersionId": "v4",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-05-15T17:26:42Z"
+        "CreateDate": "2019-11-05T20:46:13Z"
     }
 }

@@ -17,12 +17,33 @@
                     ],
                     "Effect": "Allow",
                     "Resource": "*"
+                },
+                {
+                    "Sid": "CodeStarNotificationsPowerUserAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:DescribeNotificationRule"
+                    ],
+                    "Resource": "*",
+                    "Condition": {
+                        "StringLike": {
+                            "codestar-notifications:NotificationsForResource": "arn:aws:codebuild:*"
+                        }
+                    }
+                },
+                {
+                    "Sid": "CodeStarNotificationsListAccess",
+                    "Effect": "Allow",
+                    "Action": [
+                        "codestar-notifications:ListNotificationRules"
+                    ],
+                    "Resource": "*"
                 }
             ],
             "Version": "2012-10-17"
         },
-        "VersionId": "v4",
+        "VersionId": "v5",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-10-08T20:26:25Z"
+        "CreateDate": "2019-11-05T20:48:33Z"
     }
 }
