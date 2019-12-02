@@ -6,15 +6,14 @@
                 {
                     "Effect": "Allow",
                     "Action": [
-                        "aesop:*",
                         "elemental-appliances-software:*"
                     ],
                     "Resource": "*"
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-11-18T19:03:41Z"
+        "CreateDate": "2019-12-02T18:50:28Z"
     }
 }
