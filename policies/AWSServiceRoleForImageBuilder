@@ -92,6 +92,13 @@
                     "Action": [
                         "ec2:CreateTags"
                     ],
+                    "Resource": "arn:aws:ec2:*::image/*"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": [
+                        "ec2:CreateTags"
+                    ],
                     "Resource": "*",
                     "Condition": {
                         "ForAnyValue:StringEquals": {
@@ -168,8 +175,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2019-12-02T02:04:36Z"
+        "CreateDate": "2019-12-02T06:18:40Z"
     }
 }
