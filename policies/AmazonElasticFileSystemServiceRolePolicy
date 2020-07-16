@@ -41,7 +41,7 @@
                         "backup:CreateBackupSelection"
                     ],
                     "Resource": [
-                        "arn:aws:backup:*:*:backup-plan:aws/efs/*"
+                        "arn:aws:backup:*:*:backup-plan:*"
                     ]
                 },
                 {
@@ -74,8 +74,8 @@
                 }
             ]
         },
-        "VersionId": "v2",
+        "VersionId": "v3",
         "IsDefaultVersion": true,
-        "CreateDate": "2020-07-16T16:48:14Z"
+        "CreateDate": "2020-07-16T19:27:41Z"
     }
 }
